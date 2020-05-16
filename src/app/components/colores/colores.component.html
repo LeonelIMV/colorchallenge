@@ -1,7 +1,7 @@
 <div class="divColores">Colores</div>
 <div class="contenedor">
   <div class="hijo" *ngFor="let color of colores | paginate: { itemsPerPage: 9, currentPage: p }"
-    style="background: {{color.color}}" [cdkCopyToClipboard]="color.color">{{color.color}}</div>
+    [ngStyle]="{'background': color.color}" [cdkCopyToClipboard]="color.color">{{color.color}}</div>
 </div>
 <div class="divPagination">
     <span (click)="paginaAnterior()"  id="botonAnterior" >  &lt; Anterior</span>
