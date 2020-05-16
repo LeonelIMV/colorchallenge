@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "multiplicaColorChallenge"
+  "defaultProject": "multiplicaColorChallenge",
+  "cli": {
+    "analytics": "6ff38be6-48bd-4fcb-a5a7-fd1a071b6501"
+  }
 }
