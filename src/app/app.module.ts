@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ColoresComponent } from './components/colores/colores.component';
 import { ColorCopiadoComponent } from './components/color-copiado/color-copiado.component';
 import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 import {HttpClientModule} from '@angular/common/http';
 import {ClipboardModule} from '@angular/cdk/clipboard';
 
@@ -28,7 +29,8 @@ import {NgxPaginationModule} from 'ngx-pagination';
     ClipboardModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

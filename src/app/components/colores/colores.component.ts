@@ -59,6 +59,9 @@ export class ColoresComponent implements OnInit {
       this.p--;
     }
   }
+  volverpagina():void{
+    this.ColorCopiadoEnClipboard=false;
+  }
 
   paginasTotales(): number {
     let totalPaginas: number = 0;;
@@ -77,4 +80,6 @@ export class ColoresComponent implements OnInit {
     this.colorCopiado = color;
     this.ColorCopiadoEnClipboard = true;
   }
+
+
 }
