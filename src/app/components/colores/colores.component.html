@@ -1,10 +1,28 @@
 <div class="divColores">Colores</div>
 <div class="contenedor">
   <div class="hijo" *ngFor="let color of colores | paginate: { itemsPerPage: 9, currentPage: p }"
-    [ngStyle]="{'background': color.color}" [cdkCopyToClipboard]="color.color">{{color.color}}</div>
+    [ngStyle]="{'background': color.color}" [cdkCopyToClipboard]="color.color">
+    <div class="contenedor2">
+      <div class="yearColor">
+        {{color.year}}
+      </div>
+      <div class="nameColor">
+        <span>
+          {{color.name}}
+        </span>
+      </div>
+      <div class="idColor">
+        <span>
+          <strong> {{color.color}} </strong>
+        </span>
+      </div>
+      <div class="pantoneValue">
+        {{color.pantone_value}}
+      </div>
+    </div>
+  </div>
 </div>
 <div class="divPagination">
-    <span (click)="paginaAnterior()"  id="botonAnterior" >  &lt; Anterior</span>
-    <span (click)="paginaSiguente()" id="botonSiguiente" > Siguiente &gt; </span>
-    
+  <span (click)="paginaAnterior()" style="cursor:pointer" id="botonAnterior"> &lt; Anterior</span>
+  <span (click)="paginaSiguente()" style="cursor:pointer" id="botonSiguiente"> Siguiente &gt; </span>
 </div>

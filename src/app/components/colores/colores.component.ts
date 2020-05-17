@@ -36,7 +36,6 @@ export class ColoresComponent implements OnInit {
         console.log(res.data);
         res.data.forEach(color => {
           this.colores.push(color);
-          this.colores.push(color);
         });
       }, err => { console.log(err) })
   }
