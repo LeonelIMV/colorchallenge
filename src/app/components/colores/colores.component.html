@@ -1,7 +1,10 @@
+
+
+
 <div class="divColores">Colores</div>
-<div class="contenedor">
+<div class="contenedor" *ngIf="!ColorCopiadoEnClipboard">
   <div class="hijo" *ngFor="let color of colores | paginate: { itemsPerPage: 9, currentPage: p }"
-    [ngStyle]="{'background': color.color}" [cdkCopyToClipboard]="color.color">
+    [ngStyle]="{'background': color.color}" [cdkCopyToClipboard]="color.color" (click)="ColorEnClipboard(color)" >
     <div class="contenedor2">
       <div class="yearColor">
         {{color.year}}
@@ -22,7 +25,10 @@
     </div>
   </div>
 </div>
+<app-color-copiado *ngIf="ColorCopiadoEnClipboard" [colorCopiado]="colorCopiado"></app-color-copiado>
 <div class="divPagination">
   <span (click)="paginaAnterior()" style="cursor:pointer" id="botonAnterior"> &lt; Anterior</span>
   <span (click)="paginaSiguente()" style="cursor:pointer" id="botonSiguiente"> Siguiente &gt; </span>
 </div>
+
+

@@ -8,6 +8,9 @@ import { Color } from './../../modelos/color';
   styleUrls: ['./colores.component.css']
 })
 export class ColoresComponent implements OnInit {
+
+  ColorCopiadoEnClipboard: boolean = false;
+  colorCopiado: Color = { id: 0, name: 'no', year: 0, color: '0', pantone_value: '0' };
   colores: Color[] = [];
   SublistaColores: Color[] = [];
   page: string = '?page='
@@ -41,6 +44,7 @@ export class ColoresComponent implements OnInit {
   }
 
   paginaSiguente(): void {
+    this.ColorCopiadoEnClipboard = false;
     let paginaSiguiente: number = this.p + 1;
     let paginasTotales: number = this.paginasTotales();
     if (paginasTotales > this.p) {
@@ -49,6 +53,7 @@ export class ColoresComponent implements OnInit {
   }
 
   paginaAnterior(): void {
+    this.ColorCopiadoEnClipboard = false;
     let paginaAnterior = this.p - 1;
     if (paginaAnterior > 0) {
       this.p--;
@@ -66,5 +71,10 @@ export class ColoresComponent implements OnInit {
       console.log(totalPaginas);
     }
     return totalPaginas;
+  }
+
+  ColorEnClipboard(color: Color) {
+    this.colorCopiado = color;
+    this.ColorCopiadoEnClipboard = true;
   }
 }
