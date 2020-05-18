@@ -1,16 +1,15 @@
-
 <div class="contenedor">
-    <div class="hijo" [ngStyle]="{'background': colorCopiado.color}" [cdkCopyToClipboard]="colorCopiado.color" >
-        <div class="contenedor2">
-            <div class="yearColor">
-              {{colorCopiado.year}}
-            </div>
-            <div class="Colorcopiado">
-                ¡Copiado!
-            </div>
-            <div class="pantoneValue">
-              {{colorCopiado.pantone_value}}
-            </div>
-          </div>
+  <div class="hijo" [ngStyle]="{'background': colorCopiado.color}" [cdkCopyToClipboard]="colorCopiado.color">
+    <div class="contenedor2">
+      <div class="yearColor">
+        {{colorCopiado.year}}
+      </div>
+      <div class="Colorcopiado">
+        ¡Copiado!
+      </div>
+      <div class="pantoneValue">
+        {{colorCopiado.pantone_value}}
+      </div>
     </div>
   </div>
+</div>

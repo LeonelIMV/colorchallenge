@@ -43,7 +43,7 @@
 }
 
 .contenedor2 {
-  width:97%;
+  width: 97%;
   height: 100%;
   margin: 5px auto;
   display: flex;
@@ -88,14 +88,14 @@
   padding-right: 5px;
 }
 
-#botonAnterior{
-    margin-left: 10px;
+#botonAnterior {
+  margin-left: 10px;
 }
 
-#botonSiguiente{
-    margin-right: 10px;
+#botonSiguiente {
+  margin-right: 10px;
 }
 
-#botonVolver{
+#botonVolver {
   margin-left: 46%;
 }

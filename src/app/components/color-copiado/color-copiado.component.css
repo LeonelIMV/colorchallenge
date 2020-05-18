@@ -29,35 +29,35 @@
 }
 
 .yearColor {
-    width: 97%;
-    height: 5%;
-    color: #fff;
-    font-size: 20px;
-    margin-left: 10px;
-    text-align: left;
-    border-radius: 20px;
-    flex: 1 1 auto;
-  }
+  width: 97%;
+  height: 5%;
+  color: #fff;
+  font-size: 20px;
+  margin-left: 10px;
+  text-align: left;
+  border-radius: 20px;
+  flex: 1 1 auto;
+}
 
-  .Colorcopiado{
-    width: 100%;
-    height: 90%;
-    color: #fff;
-    margin-left: 30px;
-    font-size: 50px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.Colorcopiado {
+  width: 100%;
+  height: 90%;
+  color: #fff;
+  margin-left: 30px;
+  font-size: 50px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .pantoneValue {
-    width: 100%;
-    height: 5%;
-    color: #fff;
-    font-size: 20px;
-    border-radius: 20px;
-    text-align: right;
-    flex: 1 1 auto;
-    align-self: flex-end;
-  }
+.pantoneValue {
+  width: 100%;
+  height: 5%;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 20px;
+  text-align: right;
+  flex: 1 1 auto;
+  align-self: flex-end;
+}

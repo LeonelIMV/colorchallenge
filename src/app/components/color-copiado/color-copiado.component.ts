@@ -8,7 +8,7 @@ import { Color } from './../../modelos/color';
 })
 export class ColorCopiadoComponent implements OnInit {
 
-  @Input() colorCopiado:Color=null;
+  @Input() colorCopiado: Color = null;
 
   constructor() { }
 

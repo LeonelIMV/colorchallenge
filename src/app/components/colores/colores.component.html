@@ -1,8 +1,7 @@
-
 <div class="divColores">Colores</div>
 <div class="contenedor" *ngIf="!ColorCopiadoEnClipboard">
   <div class="hijo" *ngFor="let color of colores | paginate: { itemsPerPage: 9, currentPage: p }"
-    [ngStyle]="{'background': color.color}" [cdkCopyToClipboard]="color.color" (click)="ColorEnClipboard(color)" >
+    [ngStyle]="{'background': color.color}" [cdkCopyToClipboard]="color.color" (click)="ColorEnClipboard(color)">
     <div class="contenedor2">
       <div class="yearColor">
         {{color.year}}
@@ -24,9 +23,12 @@
 </div>
 <app-color-copiado *ngIf="ColorCopiadoEnClipboard" [colorCopiado]="colorCopiado"></app-color-copiado>
 <div class="divPagination">
-  <span *ngIf="!ColorCopiadoEnClipboard" id="botonAnterior"><button mat-button (click)="paginaAnterior()" >  <mat-icon>chevron_left</mat-icon> Anterior </button></span>
-  <span *ngIf="ColorCopiadoEnClipboard"  id="botonVolver"><button mat-button (click)="volverpagina()" >  <mat-icon>expand_more</mat-icon> Volver </button></span>
-  <span *ngIf="!ColorCopiadoEnClipboard" id="botonSiguiente"><button mat-button (click)="paginaSiguente()" > Siguiente <mat-icon>chevron_right</mat-icon> </button></span>
+  <span *ngIf="!ColorCopiadoEnClipboard" id="botonAnterior"><button mat-button (click)="paginaAnterior()">
+      <mat-icon>chevron_left</mat-icon> Anterior
+    </button></span>
+  <span *ngIf="ColorCopiadoEnClipboard" id="botonVolver"><button mat-button (click)="volverpagina()">
+      <mat-icon>expand_more</mat-icon> Volver
+    </button></span>
+  <span *ngIf="!ColorCopiadoEnClipboard" id="botonSiguiente"><button mat-button (click)="paginaSiguente()"> Siguiente
+      <mat-icon>chevron_right</mat-icon> </button></span>
 </div>
-
-
